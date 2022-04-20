@@ -59,8 +59,12 @@ table {
 /**********************
 Mobile(default) Version
 **********************/
+body {
+    font-size: 16px;
+}
 
 h1 {
+    font-size: 2.5rem;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -89,12 +93,19 @@ h1 {
     Tablet Version
 **********************/
 @media screen and  (min-width:640px) and (max-width:1024px){
+    h1 {
+        font-size: 3rem;
+    }
 }
 
 /**********************
     Desktop Version
 **********************/
 @media screen and (min-width:1024px){
+    h1 {
+        font-size: 3.5rem;
+    }
+
     #imgl{
         display: none; /* Hidden by default */
         position: absolute; /* Stay in place */
