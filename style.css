@@ -1,3 +1,69 @@
+@font-face {
+    font-family: Shizuru_regular;
+    src: url(./font/Shizuru-Regular.ttf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**********************
+    CSS Style Begin
+**********************/
+
+/**********************
+Mobile(default) Version
+**********************/
+
+body{
+    background-color:#f7f7f7;
+}
+
 #imgl{
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
@@ -9,17 +75,22 @@
     margin:0 auto; 
     padding-bottom: 20px;
     overflow: auto; 
-    /* background-color: rgb(0,0,0); Fallback color */
-    /* background-color: rgba(0,0,0,0.1); Black w/ opacity */
     border: 3px white solid;
 }
-
-
 
 #card-img{
     width: 20%;
 }
 
-body{
-    background-color:#f7f7f7;
+/**********************
+    Tablet Version
+**********************/
+@media screen and  (min-width:640px) and (max-width:1024px){
 }
+
+/**********************
+    Desktop Version
+**********************/
+@media screen and (min-width:1024px){
+}
+
