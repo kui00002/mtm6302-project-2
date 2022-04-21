@@ -20,13 +20,11 @@ form.addEventListener('submit',async (e)=>{
        
 function convert(data){
         let html = `
-        <div class="card-body row g-0 mb-4">
-        
-                <img src="${data.url}" alt="" id="imgs" class="img-fluid rounded-start col-md-8 pe-4">
-                
-            <img src="${data.hdurl}" alt="" id="imgl" class="img-thumbnail">               
-              
-            <div id="des" class="col-md-4" >
+        <div class="card-body info-display row g-0 mb-5">
+            <img src="${data.url}" alt="" id="imgs" class="img-fluid ratio rounded-start col-md-5">
+            <img src="${data.hdurl}" alt="" id="imgl" class="img-thumbnail">   
+
+            <div id="des" class="card-display" >
                 <h2 class="card-title">${data.title}</h2>
                 <em>${data.date}</em>
                 <p class="card-text">${data.explanation}</p>
@@ -39,8 +37,6 @@ function convert(data){
      const imgl = document.getElementById('imgl')
      imgs.addEventListener('click', () =>{
      imgl.style.display = 'block'
-     
-     //imgl.style.position = 'absolute'
      })
  
      imgl.addEventListener('click',()=>{
@@ -57,15 +53,15 @@ function judge(){
             for( let i = 0; i < favimg.length; i++ ){
                 let favi = favimg[i]
                 let htmls = `
-                <div class="row g-0 m-4">
+                <div class="row g-0 m-2 fav-collection">
                     
-                        <img src="${favi.url}" class="img-fluid rounded-start col-md-4 me-4" id="card-img">
+                    <img src="${favi.url}" class="img-fluid rounded-start col-md-4 me-4" id="card-img">
                     
-                    <div class="col-md-8">
+                    <div class="fav-info">
                         <div class="card-body">
                             <h4 class="card-title mb-4">${favi.title}</h4>
                             <em class="card-text mb-4">${favi.date}</em><br>
-                            <button id="button${i+1}" class='btn btn-danger mt-4' data-index=${i}>delete</button>
+                            <button id="button${i+1}" class='btn btn-danger' data-index=${i}>Delete</button>
                         </div>
                     </div>
                     
